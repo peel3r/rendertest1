@@ -1,0 +1,11 @@
+<div class="container">
+<p style="color: green"><%= notice %></p>
+name -<%=  @post.title %>
+<%= render @post %>
+
+<div class="btn-group" aria-current="page">
+  <%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-dark active"  %> 
+  <%= link_to "Back to posts", posts_path, class: "btn btn-dark active" %>
+  <%= button_to 'Destroy ', post_path(@post), method: :delete, class: "btn btn-dark active" %>
+
+</div>
